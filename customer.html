@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="sub-banner">
+  <div class="h1">
+    <h1>WELCOME TO SIMI'S <span>ONLINE</span> BIDDING</h1>
+    </div>
+    <nav>
+    <div class="nav-links" id="navLinks">
+     <svg width="50" height="50"><image href="bars-solid.svg" width="50" height="50" onclick="hideMenu()"/></svg>
+    <ul>
+      <li><a href="login.html">Home</a></li>
+      <li><a href="customer.html">Sign Up</a></li>
+      <li><a href="auction.html">Biddings</a></li>
+      <li><a href="emailform.html">Contact</a></li>
+    </ul>
+    </div>
+    <svg width="50" height="50"><image href="bars-solid.svg" width="50" height="50" onclick="showMenu()"/></svg>
+    </nav>
+        <h1>Sign up</h1>
+  </div>
+   
+<!---------------login form -------------------->
+    
+    <section class="login">
+    <div class="row">
+    <div class="login-box" id="login">
+  <img src="avatar.png" class="avatar">
+    <h1>Register for Bidding here</h1>
+    <form>
+    <p>First Name</p>
+    <input type="text" name="First Name" 
+placeholder="Enter First Name">
+    <p>Last Name</p>
+    <input type="text" name="Last Name" 
+placeholder="Enter Last Name">
+    <p>Email Address</p>
+    <input type="email" name="email" 
+placeholder="Enter Email Address">
+    <p>Phone Number</p>
+    <input type="number" name="Phone Number" 
+placeholder="Enter Phone Number">
+    <p>Password</p>
+    <input type="password" name="password" 
+placeholder="Enter Password">
+    <input class="btn" type="submit" name="submit" 
+value="Register">
+    </form>
+  </div>
+   <div class="login-box">
+    <h1><jan>Register</jan> and <red>WIN BIG</red> here in this <brown>website</brown></h1>
+    <p>In order for you win big you have to sign up and agree to terms and conditions apply.<br>There many prizes one can win at a very low price<br> so save up your up money and come visit our website you wont regret it.</p>
+    
+  </div>
+  </div>
+  </section>
+    
+ <!----------------- footer --------------------------------->
+ 
+ 
+    
+    <section class="footer">
+    <p>SIMI'S ONLINE BIDDING<br>Your Best Bidding Website come join us and experience the best deals at your own  price</p>
+    <div class="icons">
+       <svg width="30" height="30"><image href="facebook.svg" width="30" height="30"/></svg>
+       <svg width="30" height="30"><image href="instagram.svg" width="30" height="30"/></svg>
+       <a href="http://www.linkedin.com/in/petrus-simon-muyenga-922bab169"><svg width="30" height="30"><image href="linkedin.svg" width="30" height="30"/></svg></a>
+   </div>
+  © since 2017 | Well Shadow Team | All Rights Reserved</p>
+  </section>
+    
+    
+    <!----------Javascript for toogle menu------------>
+  
+<script>
+      
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+           navLinks.style.right = "0";
+      }
+      function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <section class="sub-banner">
+   <div class="h11">
+        <h1>WELCOME TO SIMI'S <span>ONLINE</span> BIDDING</h1>
+     </div>
+    <nav>
+    <div class="nav-links" id="navLinks">
+     <svg width="50" height="50"><image href="bars-solid.svg" width="50" height="50" onclick="hideMenu()"/></svg>
+    <ul>
+      <li><a href="login.html">Home</a></li>
+      <li><a href="customer.html">Sign Up</a></li>
+      <li><a href="auction.html">Biddings</a></li>
+      <li><a href="emailform.html">Contact</a></li>
+    </ul>
+    </div>
+    <svg width="50" height="50"><image href="bars-solid.svg" width="50" height="50" onclick="showMenu()"/></svg>
+    </nav>
+    <h1>Contact us</h1>
+  </section>
+
+ <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58943.58668970776!2d17.015511693833467!3d-22.580069448221398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c0b1af6df2e6629%3A0x8b4b657accaf67dd!2sUniversity%20of%20Namibia!5e0!3m2!1sen!2sna!4v1703870744305!5m2!1sen!2sna" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      
+    </section>
+    
+    <section class="contact-us">
+       <div class="row">
+         <div class="contact-col">
+             <div>
+                <span>
+                     <h5>Westen Bypass Road, Independence Street</h5>
+                     <p>Khomas, Windhoek, Namibia</p>
+               </span>
+             </div>
+         
+             <div>
+                <span>
+                     <h5>+264 81 361 6521</h5>
+                     <p>Monday - Saturday, 8AM - 10PM</p>
+               </span>
+             </div>
+             <div>
+                <span>
+                     <h5>simonmuyenga8@gmail.com</h5>
+                     <p>Email Us Your Query</p>
+               </span>
+             </div>
+         </div>
+             <div class="contact-col">
+                <form action="">
+                <input type="text" placeholder="Enter full Name" required>
+                <input type="email" placeholder="Enter email Address" required>
+                <input type="text" placeholder="Enter Subject" required>
+                <textarea rows="8" placeholder="Message"></textarea>
+                <button type="submit" class="btn">SEND MESSAGE</button>
+                </form> 
+             
+             
+             </div>
+       </div>
+    </section>
+    
+    
+
+<!------------------------------ footer ------------------------------->
+<section class="footer">
+    <p>SIMI'S ONLINE BIDDING<br>Your Best Bidding Website come join us and experience the best deals at your own  price</p>
+    <div class="icons">
+       <svg width="30" height="30"><image href="facebook.svg" width="30" height="30"/></svg>
+       <svg width="30" height="30"><image href="instagram.svg" width="30" height="30"/></svg>
+       <a href="http://www.linkedin.com/in/petrus-simon-muyenga-922bab169"><svg width="30" height="30"><image href="linkedin.svg" width="30" height="30"/></svg></a>
+   </div>
+  © since 2017 | Well Shadow Team | All Rights Reserved</p>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  <include src="footer.html"></include>
+
+  <script>
+    function sendEmail() {
+      var to = document.getElementById('to').value;
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value;
+
+      if (!to || !subject || !message) {
+        document.getElementById('emailMessage').innerText = 'Please fill in all fields.';
+        return;
+      }
+
+      // Simulated email sending process (replace with actual sending code)
+      console.log('Email sent to: ' + to);
+      console.log('Subject: ' + subject);
+      console.log('Message: ' + message);
+
+      document.getElementById('emailMessage').innerText = 'Email sent successfully!';
+      document.getElementById('emailForm').reset();
+    }
+ </script>
+    <!----------Javascript for toogle menu------------>
+  
+<script>
+      
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+           navLinks.style.right = "0";
+      }
+      function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+
+
+</script>
+  </script>
+ </div>
+</body>
+</html>

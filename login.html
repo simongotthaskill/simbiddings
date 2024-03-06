@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <section class="banner">
+   <div class="h1">
+    <h1>WELCOME TO SIMI'S <span>ONLINE</span> BIDDING</h1>
+    </div>
+    <nav>
+    <div class="nav-links" id="navLinks">
+    <svg width="50" height="50"><image href="bars-solid.svg" width="50" height="50" onclick="hideMenu()"/></svg>
+    <ul>
+      <li><a href="login.html">Home</a></li>
+      <li><a href="customer.html">Sign Up</a></li>
+      <li><a href="auction.html">Biddings</a></li>
+      <li><a href="emailform.html">Contact</a></li>
+    </ul>
+    </div>
+    <svg width="50" height="50"><image  onclick="showMenu()" href="bars-solid.svg" width="50" height="50"/></svg>
+    </nav>
+    <div class="content">
+        <h1><span>PLACE</span> YOUR <span>BID</span> TODAY</h1>
+          <a href="customer.html#login" class="btn">Sign Up Here</a>
+    </div>   
+ </section>
+ 
+ 
+ 
+<!----------------------- Recent Bids ------------------------>
+
+<section class="recent">
+    <h3>Recent Bids</h3>
+    <p>Here are the recent bids put together for you.</p>
+  <div class="row">
+    <div class="latest-col">
+      <img src="2010corolla.jpg">
+      <h8>2010 Toyota Corolla</h8>
+      <p><red>Bid: N$25000.00</red></P>
+      <a href="auction.html" class="btn" onclick="subscribe()">Closed</a>
+    </div>
+    <div class="latest-col">
+      <img src="cannon-printer.jpg">
+      <h8>Cannon Printer</h8>
+      <p><red>Bid: N$899.99</red></P>
+      <a href="auction" class="btn" onclick="subscribe()">Closed</a>
+    </div>
+    <div class="latest-col">
+      <img src="golf72016.jpg" alt="Golf 7 ">
+            <h8>Golf Mk7 GTI</h8>
+            <p>Current Highest <red>Bid: N$ 150 000</red></p>
+      <a href="auction.html#GTI" class="btn">Open</a>
+    </div>
+    <div class="latest-col">
+       <img src="Iphone15promax.jpg" alt="Iphone 15 pro max">
+                <h8>Iphone 15 pro max</h8>
+                    <p>Current Highest <red>Bid: N$ 28 000</red></p>
+      <a href="auction.html#Iphone" class="btn">Open</a>
+    </div>
+  </div>
+  <a href="auction.html" href="available" class="btn">More Bids</a>
+  <script>
+            function subscribe() {
+              alert('Sorry, this Bid is closed');
+            }
+        
+          </script>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!------------------- footer --------------------------------->
+
+
+
+ <section class="footer">
+    <p>SIMI'S ONLINE BIDDING<br>Your Best Bidding Website come join us and experience the best deals at your own  price</p>
+    <div class="icons">
+       <svg width="30" height="30"><image href="facebook.svg" width="30" height="30"/></svg>
+       <svg width="30" height="30"><image href="instagram.svg" width="30" height="30"/></svg>
+       <a href="http://www.linkedin.com/in/petrus-simon-muyenga-922bab169"><svg width="30" height="30"><image href="linkedin.svg" width="30" height="30"/></svg></a>
+   </div>
+  © since 2017 | Well Shadow Team | All Rights Reserved</p>
+  </section>
+  
+<!----------Javascript for toogle menu------------>
+<script>
+      
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+           navLinks.style.right = "0";
+      }
+      function hideMenu(){
+           navLinks.style.right = "-400px";
+       }
+
+
+</script>
+</body>
+</html>
+      <a

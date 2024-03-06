@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auction Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="sub-banner">
+  <div class="h1">
+    <h1>WELCOME TO SIMI'S <span>ONLINE</span> BIDDING</h1>
+    </div>
+    <nav>
+    <div class="nav-links" id="navLinks">
+     <svg width="50" height="50"><image href="bars-solid.svg" width="50" height="50" onclick="hideMenu()"/></svg>
+    <ul>
+      <li><a href="login.html">Home</a></li>
+      <li><a href="customer.html">Sign Up</a></li>
+      <li><a href="auction.html">Biddings</a></li>
+      <li><a href="emailform.html">Contact</a></li>
+    </ul>
+    </div>
+    <svg width="50" height="50"><image href="bars-solid.svg" width="50" height="50" onclick="showMenu()"/></svg>
+    </nav>
+    <h1>Biddings</h1>
+  </div>
+
+  <section class="auction-container">
+    <h2 id="available">Available Products for Bidding<br><br><span>Today</span></h2>
+    
+    <div class="product">
+      <img src="amarok2016.jpg" alt="AMAROK V6">
+      <h3>AMAROK V6</h3>
+      <p>2016 Model<br> 135 km<br>fully serviced<br>white in color.</p>
+      <div class="bid-section">
+        <p>Current Highest Bid: N$400 000</p>
+        <input type="number" id="bidProduct1" placeholder="Your Bid">
+        <button onclick="placeBid('AMAROK V6')">Place Bid</button>
+      </div>
+      </div>
+
+      <div class="product">
+        <img src="Jeep.jpg" alt="JEEP WRANGLER">
+        <h3>JEEP WRANGLER</h3>
+        <p>Sahara Unlimited <br>
+            3.8 V6<br> 
+            4 x 4 M/T <br>
+            132 200<br>
+            Fully serviced
+            .</p>
+        <div class="bid-section">
+          <p>Current Highest Bid: N$ 350 000</p>
+          <input type="number" id="bidProduct1" placeholder="Your Bid">
+          <button onclick="placeBid('Product 1')">Place Bid</button>
+        </div>
+        </div>
+
+        <div class="product">
+            <img src="golf72016.jpg" alt="Golf 7 " id="GTI">
+            <h3>Golf Mk7 GTI</h3>
+            <p>2.0-litre<br>
+            210000 km<br>
+            Red in color<br>
+            fully serviced.</p>
+            <div class="bid-section">
+              <p>Current Highest Bid: N$ 150 000</p>
+              <input type="number" id="bidProduct1" placeholder="Your Bid">
+              <button onclick="placeBid('Product 1')">Place Bid</button>
+            </div>
+            </div>
+
+            <div class="product">
+                <img src="Iphone15promax.jpg" alt="Iphone 15 pro max" id="Iphone">
+                <h3>Iphone 15 pro max</h3>
+                <p>Pro camera system<br>
+                    48MP Main: 24mm<br>second‑generation sensor‑shift optical image stabilization,<br> 100% Focus Pixels<br> 
+                    super‑high‑resolution photos (24MP and 48MP)<br>
+                 <div class="bid-section">
+                  <p>Current Highest Bid: N$ 28 000</p>
+                  <input type="number" id="bidProduct1" placeholder="Your Bid">
+                  <button onclick="placeBid('Product 1')">Place Bid</button>
+                </div>
+                </div>
+
+                <div class="product">
+                    <img src="MacBook-Air-M1.jpg" alt="MacBook Air M1">
+                    <h3>MacBook Air M1</h3>
+                    <p>2020 MODEL<br>8 core Apple ml chip<br> 8gb RAM<br>256gb SSD HDD</p>
+                    <div class="bid-section">
+                      <p>Current Highest Bid: N$ 15 000</p>
+                      <input type="number" id="bidProduct1" placeholder="Your Bid">
+                      <button onclick="placeBid('Product 1')">Place Bid</button>
+                    </div>
+    </div>
+
+  </section>
+  
+  <!----------------------- footer ------------------------------->
+  
+  
+  
+  <section class="footer">
+    <p>SIMI'S ONLINE BIDDING<br>Your Best Bidding Website come join us and experience the best deals at your own  price</p>
+    <div class="icons">
+       <svg width="30" height="30"><image href="facebook.svg" width="30" height="30"/></svg>
+       <svg width="30" height="30"><image href="instagram.svg" width="30" height="30"/></svg>
+       <a href="http://www.linkedin.com/in/petrus-simon-muyenga-922bab169"><svg width="30" height="30"><image href="linkedin.svg" width="30" height="30"/></svg></a>
+   </div>
+  © since 2017 | Well Shadow Team | All Rights Reserved</p>
+  </section>
+
+  <script>
+    function navigateToCustomerPage() { 
+  }
+  function placeBid(productName) {
+    const bidValue = document.getElementById(`bid${productName.replace(/ /g, '')}`).value;
+  }
+  </script>
+  
+  
+  
+  <!----------Javascript for toogle menu------------>
+  
+<script>
+      
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+           navLinks.style.right = "0";
+      }
+      function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+
+
+</script>
+</body>
+</html>
